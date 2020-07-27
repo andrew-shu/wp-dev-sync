@@ -16,7 +16,7 @@ mysql_exec() {
       "password=${pass}" \
       "host=${host}" \
       "port=${port}" \
-      | HOME="/sys" mysql --defaults-file=/dev/stdin -e "${5}"
+      | HOME="/sys" mysql --defaults-file=/dev/stdin -e "${db}"
   else
     printf "%s\n" \
       "[client]" \
