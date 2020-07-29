@@ -43,7 +43,7 @@ mysqldump_exec() {
     "password=${pass}" \
     "host=${host}" \
     "port=${port}" \
-     | HOME="/sys" mysqldump --defaults-file=/dev/stdin ${db} > $file
+     | HOME="/sys" mysqldump --defaults-file=/dev/stdin ${db} > ${file}
 }
 
 
